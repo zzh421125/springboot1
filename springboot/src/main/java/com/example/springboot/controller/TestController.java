@@ -9,11 +9,11 @@ import com.example.springboot.demo.Type;
 import com.example.springboot.demo.TypeLister;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 
-import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.*;
@@ -33,7 +33,6 @@ public class TestController {
         if (!originalFilename.endsWith("xlsx")) {
             throw new ZiException("101", "文件格式不对");
         }
-
         List<Type> types = EasyExcel.read(file.getInputStream(), Type.class, new TypeLister())
                 .sheet().doReadSync();
         List<Type> list = types.stream().filter
@@ -75,8 +74,8 @@ public class TestController {
 
     }
 
-    @PostMapping("/index")
-    public void test1(){
-
+    @GetMapping("/")
+    public String test1() {
+        return "test";
     }
 }
