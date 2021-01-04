@@ -3,8 +3,6 @@ package com.example.springboot.demo;
 import com.alibaba.excel.annotation.ExcelIgnore;
 import com.alibaba.excel.annotation.ExcelProperty;
 
-import java.util.Date;
-
 /**
  * #date：2020/10/9 <br/>
  * #param:  <br/>
@@ -14,12 +12,12 @@ public class Type    {
     @ExcelProperty(index = 0)
     private String name;
 
-    @ExcelProperty(index = 3)
+    @ExcelProperty(index = 4)
     private String date1;
 
-    @ExcelProperty(index = 4)
-    private String date2;
     @ExcelProperty(index = 5)
+    private String date2;
+    @ExcelProperty(index = 6)
     private String date;
 
     @ExcelIgnore
