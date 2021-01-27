@@ -4,15 +4,15 @@ import java.io.Serializable;
 import java.util.List;
 
 /**
- * #date：2020/12/3 <br/>
- * #param:  <br/>
- * #return: <br/>
+ * @date：2020/12/3 <br/>
+ * @param:  <br/>
+ * @return: <br/>
  */
 public class QryExelDTO implements Serializable{
 
     private String name;
 
-    private List<String> programs;
+    private List<ProgramName> programs;
 
     public String getName() {
         return name;
@@ -22,11 +22,11 @@ public class QryExelDTO implements Serializable{
         this.name = name;
     }
 
-    public List<String> getPrograms() {
+    public List<ProgramName> getPrograms() {
         return programs;
     }
 
-    public void setPrograms(List<String> programs) {
+    public void setPrograms(List<ProgramName> programs) {
         this.programs = programs;
     }
 }
