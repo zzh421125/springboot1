@@ -21,7 +21,7 @@ import java.util.Map;
 @SpringBootTest
 public class SpringbootApplicationTests {
 
-	@Test
+/*	@Test
 	 public void contextLoads() throws FileNotFoundException {
       FileInputStream fileInputStream = new FileInputStream("D:\\1.xlsx");
        //EasyExcel.read(fileInputStream, Type.class, new TypeLister())
@@ -33,10 +33,10 @@ public class SpringbootApplicationTests {
 
         int size = objects.size();
         System.out.println(size+"tIOA");
-    }
-
+    }*/
+/*
     @Test
-    public void contextLoads1(){
+   public void contextLoads1(){
         Type type = new Type();
         type.setDate1("2020-09-09");
         type.setDate2("2020-09-19");
@@ -58,7 +58,7 @@ public class SpringbootApplicationTests {
       EasyExcel.
                 write("D:\\7.xlsx").withTemplate("D:\\11.xlsx").
                 sheet().doFill(list);
-        /*ExcelWriter writer = EasyExcel.
+        *//*ExcelWriter writer = EasyExcel.
                 write("D:\\7.xlsx").withTemplate("D:\\11.xlsx").build();
 
         WriteSheet writeSheet = EasyExcel.writerSheet().build();
@@ -66,7 +66,7 @@ public class SpringbootApplicationTests {
 
        // excelWriter.write(List<Type> list, writeSheet);
       //  excelWriter.sheet().doFill(data())
-        writer.finish();*/
+        writer.finish();*//*
     }
-
+*/
 }
